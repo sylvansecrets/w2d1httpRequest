@@ -19,7 +19,6 @@ function getHTML (options, callback) {
 }
 
 function printHTML(output){
-  console.log("print invoked");
   console.log(output.join(""));
 }
 
