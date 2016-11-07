@@ -21,7 +21,7 @@ function getAndPrintHTMLChunks () {
     response.setEncoding('utf8');
 
     // console.log the data when it is received
-    response.on('data', function (data){
+    response.on('data', function (response){
       outputList.push(data.toString());
     });
 
@@ -29,7 +29,7 @@ function getAndPrintHTMLChunks () {
       console.log(outputList.join(""));
     });
 
-    response.on('err', function(err){
+    response.on('err', function(response){
       console.log('Error ', err, 'encountered')
     });
 
